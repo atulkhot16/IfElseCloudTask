@@ -1,0 +1,39 @@
+<!-- <p>graphs works!</p> -->
+<div class="row my-4">
+    <div class="col-8">
+        <div class="card pb-0">
+            <div class="row graphs-header-row">
+                <div class="col-6">
+                    <h2 class="graphs-header-prim">
+                        finances
+                    </h2>
+                </div>
+                <div class="col-6 graphs-header-sec">
+                    <div>
+                        <i class="fas fa-circle point-blue"></i>
+                        <span>Income</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-circle point-orange"></i>
+                        <span>Outcome</span>
+                    </div>
+                    <div>
+                        <select name="" id="">
+                            <option value="">Monthly</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="graphs-row">
+                <div class="col-12 line-graph">
+                    <div class="card px-0 flex justify-content-center">
+                        <p-chart type="line" [data]="data" [options]="options" height="200%"></p-chart>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <app-doughnut-graph></app-doughnut-graph>
+    </div>
+</div>

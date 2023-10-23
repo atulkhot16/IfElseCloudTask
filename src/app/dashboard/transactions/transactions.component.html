@@ -1,0 +1,46 @@
+<!-- <p>transactions works!</p> -->
+<div class="row transactions">
+    <div class="col-12">
+        <div class="card">
+            <div class="row graphs-header-row">
+                <div class="col-6">
+                    <h2 class="transactions-header-prim">
+                        transactions
+                    </h2>
+                </div>
+                <div class="col-6 graphs-header-sec">
+                    <div>
+                        <select name="" id="">
+                            <option value="">Recent</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="graphs-row mt-2 transaction-row">
+                <div class="col-12">
+                    <table class="table transaction-table">
+                        <tbody>
+                            <tr *ngFor="let transact of transactionArr">
+                                <td><img src={{transact.picture}} alt="user-image" title="user-image"></td>
+                                <td>{{transact.name}}</td>
+                                <td>{{transact.company}}</td>
+                                <td>{{transact.date}}</td>
+                                <td>{{transact.time}}</td>
+                                <td>${{transact.balance}}</td>
+                                <td><select name="" id="" class="select form-select" [ngClass]="{'status-comp' : transact.status == 'completed'}">
+                                        <option value="1">{{transact.status}}</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</div>

@@ -1,0 +1,33 @@
+.image-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & img{
+        border-radius: 50%;
+        scale: .8;
+    }
+}
+
+.quick-transfer-wrapper{
+    & p {
+        font-size: 1.2rem;
+        color: #969696;
+    }
+    & h3{
+        font-size: 1.2rem;
+        color: #969696;
+    }
+    & .card-number-wrapper{
+        display: flex;
+        justify-content: space-between;
+        border: 1.5px solid $color-blue-light;
+        border-radius: .7rem;
+        & p, h3{
+            font-size: 1rem;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: .8rem;
+        }
+    }
+}
+

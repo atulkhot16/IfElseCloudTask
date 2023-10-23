@@ -1,0 +1,78 @@
+.card{
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    padding: 1.5rem;
+    
+}
+.top-cards {
+    &:hover,
+    :focus {
+        background-color: $color-blue;
+        & .logo-primary{
+            background-color: $color-blue-light;
+            color: azure;
+        }
+        & .card-text{
+            color: azure;
+        }
+        
+    }
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        &-primary {
+            color: $color-blue;
+            font-size: 2rem;
+            height: 5rem;
+            width: 5rem;
+            border-radius: 50%;
+            background-color: $color-base;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // &:hover,
+            // :focus {
+            //     background-color: $color-blue-light;
+            //     color: azure;
+            // }
+        }
+    }
+    // & .card-text{
+    //     :hover,:focus{
+    //         color: azure;
+    //     }
+    // }
+
+}
+
+// .card:hover{
+//     background-color: $color-blue;
+// }
+
+
+
+// .logo-primary{
+//     height: 5rem;
+//     width: 5rem;
+//     border-radius: 50%;
+//     background-color: $color-base;
+//     padding: 10px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     &:hover, :focus{
+//         background-color: $color-blue-light;
+//         color: azure;
+//     }
+// }
+
+.card-text>p {
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem 0;
+    color: $color-text-primary
+}
+
+.card-text>h2 {
+    font-weight: 900;
+}

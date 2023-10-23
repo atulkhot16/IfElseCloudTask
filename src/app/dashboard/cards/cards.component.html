@@ -1,0 +1,70 @@
+<div class="row">
+    <div class="col-12">
+        <div class="row" *ngFor="let bal of currentBalArr">
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                <div class="card top-cards d-flex" >
+                    <div class="logo">
+                        <div class="logo-primary">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <div class="logo-secondary">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <p>Balance</p>
+                        <h2>{{bal.balance | currency : 'USD'}}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                <div class="card top-cards d-flex" >
+                    <div class="logo">
+                        <div class="logo-primary">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+                        <div class="logo-secondary">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <p>Income</p>
+                        <h2>{{bal.income | currency : 'USD'}}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                <div class="card top-cards d-flex" >
+                    <div class="logo">
+                        <div class="logo-primary">
+                            <i class="fas fa-piggy-bank"></i>
+                        </div>
+                        <div class="logo-secondary">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <p>Savings</p>
+                        <h2>{{bal.savings | currency : 'USD'}}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                <div class="card top-cards d-flex" >
+                    <div class="logo">
+                        <div class="logo-primary">
+                            <i class="fa fa-download" aria-hidden="true"></i>
+                        </div>
+                        <div class="logo-secondary">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <p>Expenses</p>
+                        <h2>{{bal.expenses | currency : 'USD'}}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

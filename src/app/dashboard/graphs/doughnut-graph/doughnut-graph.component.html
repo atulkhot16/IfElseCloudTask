@@ -1,0 +1,38 @@
+<!-- <p>doughnut-graph works!</p> -->
+<div class="card pb-0">
+    <div class="row graphs-header-row">
+        <div class="col-6">
+            <h2 class="graphs-header-prim">
+                all expenses
+            </h2>
+        </div>
+        <div class="col-6 graphs-header-sec">
+            <div>
+                <select name="" id="">
+                    <option value="">Monthly</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="graphs-row">
+        <div class="col-12 doughnut-graph">
+            <div class="card p-0 flex justify-content-center">
+                <p-chart type="doughnut" [data]="doughnutData" [options]="doughnutOptions" height="170%"></p-chart>
+            </div>
+        </div>
+    </div>
+    <div class="row doughnut-graph-text">
+        <div class="col-4">
+            <p>Daily</p>
+            <h3>$573.12</h3>
+        </div>
+        <div class="col-4">
+            <p>Weekly</p>
+            <h3>$573.12</h3>
+        </div>
+        <div class="col-4">
+            <p>Monthly</p>
+            <h3>$573.12</h3>
+        </div>
+    </div>
+</div>

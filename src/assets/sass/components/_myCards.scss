@@ -1,0 +1,57 @@
+.visa-card {
+    max-width: 100%;
+    width: 100%;
+    height: 90%;
+}
+
+.my-cards-balance {
+    box-shadow: 2px 2px 4px 2px $color-base, -2px 0 4px 2px $color-base;
+    & p {
+        font-size: 1rem;
+        color: #969696;
+    }
+    ;
+    & h2 {
+        font-weight: 900;
+        font-size: 1.5rem;
+    }
+    ;
+    & .percentage-wrapper {
+        font-size: 1rem;
+        display: flex;
+        justify-content: flex-end;
+
+        & .percentage-increase {
+            color: $color-green;
+            font-weight: 700;
+            margin-right: .5rem;
+            & i {
+                margin-right: 0.5rem;
+            }
+        }
+        ;
+        & .percentage-decrease {
+            color: red;
+            font-weight: 700;
+            & i {
+                margin-right: 0.5rem;
+            }
+        }
+    }
+    & hr{
+        opacity: 0.1;
+    }
+    & h3{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+}
+.addNewCard{
+    width: 100%;
+    background-color: $color-ghost-white;
+    border: none;
+    color: $color-blue-light-thin;
+    padding: 0.8rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+}

@@ -1,0 +1,58 @@
+.graphs-header-prim{
+    @include header-sec
+}
+
+.graphs-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.graphs-header-sec{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    & div{
+        display: flex;
+        align-items: center;
+    };
+    & span{
+        font-size: 1rem;
+        margin:0 1.5rem 0 0.5rem;
+        font-weight: 900;
+        color: $color-text-primary;
+    };
+    & select{
+        border: none;
+        font-size: 1rem;
+        font-weight: 900;
+        color: $color-text-primary;
+    }
+}
+.point-blue{
+    color: $color-blue;
+    font-size: .5rem;
+}
+.point-orange{
+    color: $color-tea-rose;
+    font-size: .5rem;
+}
+
+// .line-graph{
+//     height: 250px;
+// }
+// .doughnut-graph{
+//     height: 200px;
+// }
+
+.doughnut-graph-text{
+    & p{
+        font-size: 1rem;
+        color: #969696;
+        margin-bottom: .5rem;
+    }
+    & h3{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+}
